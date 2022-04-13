@@ -1,6 +1,6 @@
 {
   "name": "3d-model-ts-library",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -14,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@google/model-viewer": "^1.11.1",
     "typescript": "^4.6.3"
   }
 }
