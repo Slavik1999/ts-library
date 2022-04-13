@@ -1,2 +1,2 @@
 // @ts-ignore
-export * from "@google/model-viewer";
+import "@google/model-viewer";
