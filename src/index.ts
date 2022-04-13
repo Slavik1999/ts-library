@@ -1,2 +1,1 @@
-// @ts-ignore
-export * from "@google/model-viewer";
+export * from './components';
