@@ -7,6 +7,8 @@ import postcss from "rollup-plugin-postcss";
 import { terser } from "rollup-plugin-terser";
 
 const packageJson = require("./package.json");
+import { nodeResolve } from '@rollup/plugin-node-resolve';
+import json from 'rollup-plugin-json';
 
 export default [
   {
@@ -29,6 +31,8 @@ export default [
       typescript({ tsconfig: "./tsconfig.json" }),
       postcss(),
       terser(),
+      nodeResolve({ jsnext: true, preferBuiltins: true, browser: true }),
+      json(),
     ],
   },
   {
