@@ -1,6 +1,6 @@
 {
   "name": "3d-model-ts-library-rollup",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "",
   "scripts": {
     "rollup": "rollup -c"
