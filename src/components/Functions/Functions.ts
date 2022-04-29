@@ -1,5 +1,5 @@
 function getLocalAccessToken() {
-  return localStorage.getItem("accessToken");
+  return process.env.REACT_APP_TOKEN_AUTH
 }
 
 const getErrorMessege = (error: any) => {
