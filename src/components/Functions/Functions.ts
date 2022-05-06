@@ -15,7 +15,7 @@ export async function getProductList() {
   try {
     const data = await fetch("https://3dmodels.nyblecraft.com/api/deepmodels", {
       headers: {
-        Authorization: `Bearer ${token}`,
+        'X-API-KEY': `${token}`,
       },
     });
 
@@ -33,7 +33,7 @@ export async function getProduct(productId: string) {
       `https://3dmodels.nyblecraft.com/api/deepmodels/${productId}`,
       {
         headers: {
-          Authorization: `Bearer ${token}`,
+          'X-API-KEY': `${token}`,
         },
       }
     );
