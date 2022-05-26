@@ -1,9 +1,5 @@
 let initalKey = "";
 
-function getLocalAccessToken() {
-  return initalKey;
-}
-
 const getErrorMessege = (error: any) => {
   if (error.response.status > 500) {
     throw new Error("server error");
@@ -16,7 +12,7 @@ export function initKey(key: string) {
 }
 
 export async function getProductList() {
-  const token = getLocalAccessToken();
+  const token = initalKey;
 
   try {
     const data = await fetch("https://3dmodels.nyblecraft.com/api/deepmodels", {
@@ -32,7 +28,7 @@ export async function getProductList() {
 }
 
 export async function getProduct(productId: string) {
-  const token = getLocalAccessToken();
+  const token = initalKey;
 
   try {
     const data = await fetch(
