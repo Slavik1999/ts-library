@@ -1,5 +1,7 @@
+let initalKey = "";
+
 function getLocalAccessToken() {
-  return process.env.REACT_APP_TOKEN_AUTH
+  return initalKey;
 }
 
 const getErrorMessege = (error: any) => {
@@ -8,6 +10,10 @@ const getErrorMessege = (error: any) => {
   }
   throw new Error(error.response.data.message);
 };
+
+export function initKey(key: string) {
+  initalKey = key;
+}
 
 export async function getProductList() {
   const token = getLocalAccessToken();
