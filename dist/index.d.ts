@@ -1,3 +1,4 @@
+declare function initKey(key: string): void;
 declare function getProductList(): Promise<any>;
 declare function getProduct(productId: string): Promise<any>;
 
@@ -6,4 +7,4 @@ declare namespace ModelViewer_d {
   };
 }
 
-export { ModelViewer_d as ModelViewer, getProduct, getProductList };
+export { ModelViewer_d as ModelViewer, getProduct, getProductList, initKey };

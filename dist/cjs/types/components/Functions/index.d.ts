@@ -1,1 +1,1 @@
-export { getProductList, getProduct } from "./Functions";
+export { getProductList, getProduct, initKey } from "./Functions";
